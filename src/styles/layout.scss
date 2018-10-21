@@ -1,0 +1,55 @@
+// $desktop_flex: row;
+// $mobile_flex: column;
+
+$flex_direction: (
+  desktop: row,
+  mobile: column
+);
+.card {
+  // height: 50px;
+  // border: 2px solid black;
+  text-align: center;
+  display: flex;
+}
+.hero {
+  height: 150vh;
+}
+.deck {
+  display: flex;
+}
+.top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.top,
+.bottom,
+.main {
+  flex-direction: map-get($flex_direction, mobile);
+  flex: 1;
+}
+.main {
+  padding-top: 118px;
+}
+
+@media all and (min-width: 768px) {
+  .sidebar,
+  .sidenav-container,
+  .main {
+    flex-direction: map-get($flex_direction, desktop);
+  }
+  .sidebar,
+  .sidenav-container {
+    height: 400px;
+    flex: 1 1 5rem;
+  }
+  .hero {
+    height: 150vh;
+    flex: 3 3;
+  }
+}

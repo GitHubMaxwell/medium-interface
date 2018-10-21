@@ -1,0 +1,110 @@
+.hero {
+  background-color: lightgray;
+}
+.sidebar {
+  background-color: red;
+}
+.footer {
+  background-color: white;
+}
+.header-container {
+  background-color: #d97390;
+  // width:100%;
+  display: inline;
+  // margin: 0 auto;
+
+  .header-top-container {
+    max-width:1024px;
+    background-color: inherit;
+    width:100%;
+    display:flex;
+    // justify-content: flex-start;
+    align-items: center;
+    .header-logo-container {
+      height: 50px;
+      width: 50px;
+      // background-color: transparent;
+      // filter:invert(1);
+      // -webkit-filter: invert(1);
+      margin: 5px;
+      padding: 5px;
+    }
+    .styled-logo-container {
+      height:50px;
+      // filter:invert(1);
+      // -webkit-filter: invert(1);
+        }
+    .header-btn-container {
+      margin-left: auto;
+      background-color: inherit;
+      margin-right:10px;
+      .btn {
+        display: inline-block;
+        background-color:inherit;
+        padding: 10px;
+      }
+      .login {
+        color:lightgray;
+        transition:150ms;
+        cursor:pointer;
+        &:hover {
+          color:white;
+        }
+      }
+      .signup {
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        background-color:inherit;
+        color:lightgray;
+        transition:150ms;
+        cursor:pointer;
+        &:hover {
+          border: 1px solid white;
+          color:white;
+        }
+      }
+    }
+  }
+  .header-bottom-container {
+    // display:flex;
+    max-width:1024px;
+    display:flex;
+    // justify-content: flex-start;
+    align-items:center;
+    background-color: inherit;
+
+    .header-ul-container {
+      background-color: inherit;
+      list-style: none;
+      display:flex;
+      justify-content: flex-start;
+      align-items:center;
+      // li {
+      //   padding:10px;
+      // }
+       a {
+        text-decoration:none;
+        background-color: #d97390;
+        color:lightgray;
+        display: inline-block;
+        padding: 20px;
+        cursor:pointer;
+        &:hover {
+          color:white;
+        }
+      }
+    }
+  }
+}
+
+.sidenav-container {
+  ul {
+    list-style: none;
+  }
+  li {
+    // font-family: sans-serif;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 4px;
+  }
+}
