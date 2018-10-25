@@ -5,7 +5,7 @@ import Hero from "./Hero.js";
 // import Sidebar from "./Sidebar.js";
 import Footer from "./Footer.js";
 
-function Deck() {
+function App() {
   return (
     <Fragment>
       <div className="deck top">
@@ -23,4 +23,4 @@ function Deck() {
   );
 }
 
-export default Deck;
+export default App;
