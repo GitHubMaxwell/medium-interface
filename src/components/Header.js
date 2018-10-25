@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 
-import MediumLogo from '../assets/medium_logo.png';
+import monogram from '../assets/monogram.png';
 import StyledLogo from '../assets/styled-components.png';
 // import search from '../assets/search.png';
 // import Magnify from 'mdi-material-ui/Magnify';
@@ -13,7 +13,7 @@ function Header() {
       <div className="card header-container">
 
         <div className="header-top-container">
-          <img className="header-logo-container" src={MediumLogo} alt="medium logo" style={{ backgroundColor: 'white', color: 'white' }} />
+          <img className="header-logo-container" src={monogram} alt="medium logo" />
           {/* <span> </span> */}
           <img className="styled-logo-container" src={StyledLogo} alt="styled components logo" style={{ backgroundColor: 'transparent' }} />
           <div className="header-btn-container">

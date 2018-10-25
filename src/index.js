@@ -6,7 +6,7 @@ import App from "./components/App.js";
 import "./styles/base.scss";
 import "./styles/layout.scss";
 import "./styles/modules.scss";
-
+import "./styles/grid_stuff.scss";
 class Index extends Component {
   // constructor(props) {
   //   super(props);
